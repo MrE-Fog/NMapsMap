@@ -1,4 +1,4 @@
-// swift-tools-version:5.6
+// swift-tools-version: 5.7
 
 import PackageDescription
 
@@ -14,13 +14,13 @@ let package = Package(
             targets: [
                 "NMapsMap",
             ]
-        )
+        ),
     ],
     targets: [
         .binaryTarget(
             name: "NMapsMap",
-            url: "https://github.com/jaemyeong/NMapsMap-SPM/releases/download/3.16.0/NMapsMap.xcframework.zip",
-            checksum: "efa36d05b32ec32eef6e26047d3830ace3906cd07e62a848ca9db59f02f0a2e4"
+            url: "https://github.com/jaemyeong/NMapsMap-SPM/releases/download/3.16.1/NMapsMap.xcframework.zip",
+            checksum: "815c557be36d86e5569fb24ef68abe440ecac8d6a1150f4a9e3e3e9ce15fe7d8"
         ),
     ]
 )
