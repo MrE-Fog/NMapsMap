@@ -1,24 +1,26 @@
 # NMapsMap
 
-[NMapsMap](https://github.com/navermaps/NMapsMap) 비공식 스위프트 패키지입니다.
+iOS 네이버 지도 SDK 비공식 스위프트 패키지입니다.
 
-NMapsMap 3.16.0 버전을 기반으로 제작되었습니다.
+## Overview
 
-## Requirements
+[NMapsMap](https://github.com/navermaps/NMapsMap) 3.16.1 버전을 기반으로 제작되었습니다.
 
-- macOS 12.5.1
-- Xcode 13.4.1
-- Swift 5.6
+### Requirements
 
-## Installation
+- macOS 13.1
+- Xcode 14.2
+- iOS 13.0
 
-### Swift Package Manager
+### Installation
+
+#### Swift Package Manager
 
 ```swift
-.package(url: "https://github.com/jaemyeong/NMapsMap-SPM.git", .upToNextMajor(from: "3.16.0"))
+.package(url: "https://github.com/jaemyeong/NMapsMap-SPM.git", .upToNextMajor(from: "3.16.1"))
 ```
 
-## Usage
+### Usage
 
 ```swift
 import NMapsMap
@@ -26,10 +28,14 @@ import NMapsMap
 let mapView = NMFMapView()
 ```
 
-## References
+### Documentation
+
+- [NMapsMap](https://navermaps.github.io/ios-map-sdk/reference/)
+
+### References
 
 - [NMapsMap](https://github.com/navermaps/NMapsMap)
 
-## Author
+### Author
 
 [Jaemyeong Jin](https://github.com/jaemyeong) ([jaemyeong@me.com](mailto:jaemyeong@me.com))
