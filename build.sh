@@ -4,8 +4,6 @@ set -e
 
 VERSION="release/3.16.1"
 
-# git clone --depth=1 --branch="${VERSION}" https://github.com/navermaps/NMapsMap.git
-
 curl --location -o NMapsMap.zip "https://github.com/navermaps/NMapsMap/releases/download/${VERSION}/NMapsMap.framework.zip"
 
 unzip NMapsMap.zip -d NMapsMap
