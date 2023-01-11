@@ -14,8 +14,22 @@ mv NMapsMap/framework/NMapsMap.xcframework NMapsMap.xcframework
 
 zip -r NMapsMap.xcframework.zip NMapsMap.xcframework -x \*.DS_Store
 
-rm -r NMapsMap.xcframework
+rm -rf NMapsMap.xcframework
 
-rm -r NMapsMap
+rm -rf NMapsMap
 
 swift package compute-checksum NMapsMap.xcframework.zip
+
+VERSION="release/1.0.1"
+
+git clone --depth=1 --branch="${VERSION}" https://github.com/navermaps/NMapsGeometry.git
+
+mv NMapsGeometry/framework/NMapsGeometry.xcframework NMapsGeometry.xcframework
+
+zip -r NMapsGeometry.xcframework.zip NMapsGeometry.xcframework -x \*.DS_Store
+
+rm -rf NMapsGeometry.xcframework
+
+rm -rf NMapsGeometry
+
+swift package compute-checksum NMapsGeometry.xcframework.zip
