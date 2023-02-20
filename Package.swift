@@ -13,20 +13,17 @@ let package = Package(
             name: "NMapsMap",
             targets: [
                 "NMapsMap",
-                "NMapsGeometry",
             ]
         ),
+    ],
+    dependencies: [
+        .package(url: "https://github.com/jaemyeong/NMapsGeometry.git", .upToNextMajor(from: "1.0.1")),
     ],
     targets: [
         .binaryTarget(
             name: "NMapsMap",
-            url: "https://github.com/jaemyeong/NMapsMap-SPM/releases/download/3.16.1/NMapsMap.xcframework.zip",
-            checksum: "1bd39a480c2d0136c98c00a45f1b976537422a4e435539eccd35c63f272fc5be"
-        ),
-        .binaryTarget(
-            name: "NMapsGeometry",
-            url: "https://github.com/jaemyeong/NMapsMap-SPM/releases/download/3.16.1/NMapsGeometry.xcframework.zip",
-            checksum: "f9489d0c472b9a1569fbd1606a94d3164265a2f9d74144eb5cb546a826def2e2"
+            url: "https://github.com/jaemyeong/NMapsMap/releases/download/untagged-d3e6602a3ba185f26d47/NMapsMap.xcframework.zip",
+            checksum: "137f99021527b07b7735a670e2c5592c2c453f9c78efc69293d3bc6fe742f7e0"
         ),
     ]
 )
